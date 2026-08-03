@@ -23,9 +23,6 @@ public class Interessimpl {
       double capitainicial= 0;
       double tasadeinteres=0;
       double tiempoenanos=0;
-      int capital='0';
-      int tasa='0';
-      int tiempo= '0';
       
         System.out.println("Ingrese su capitalinicial:");
         capitainicial=input.nextDouble();
@@ -41,7 +38,7 @@ public class Interessimpl {
         
         
         
-        tasadeinteres=capital * tasa * tiempo / 100;
+        tasadeinteres=capitainicial *tasadeinteres * tiempoenanos/ 100;
     
           System.out.println("interes generado es: " + tasadeinteres);
     }
