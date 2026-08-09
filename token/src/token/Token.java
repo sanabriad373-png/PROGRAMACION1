@@ -4,6 +4,8 @@
  */
 package token;
 
+import java.util.Scanner;
+
 /**
  *
  * @author DANIEL SANABRIA
@@ -43,7 +45,7 @@ public class Token {
         System.out.println("Registro Correcto");
         
         while(token.length()<12){
-            tipoCaracter = rd.nextInt(2);
+            tipoCaracter = rd.nexnInt(2);
             
             if(tipoCaracter == 0){
                 numeroToken = rd.nextInt(10);
