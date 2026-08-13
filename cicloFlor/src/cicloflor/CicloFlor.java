@@ -38,7 +38,7 @@ public class CicloFlor {
            int numVarones= 0;
            int numMujeres= 0;
            char seleccion='1' ;               
-          
+          double porcetanje=0;   
 
             
             for (int i = 0; i < NUMEROVOTANTES; i++) {
@@ -53,7 +53,7 @@ public class CicloFlor {
                         numVarones++;
                         break;
                         
-                     case 'm':
+                     case 'M':
                          System.out.println("Mujer entrando");
                         System.out.println("a ala cabina");
                         numMujeres++;
@@ -65,7 +65,13 @@ public class CicloFlor {
                         System.out.println("Error de ingreso");
                         
                 }
-        }
+              
+         }
+              porcetanje= (double)numVarones / NUMEROVOTANTES;   
+               System.out.printf("Varones: %.2f %% \n ",porcetanje*100);
+               
+               porcetanje= (double)numMujeres / NUMEROVOTANTES;   
+               System.out.printf("Mujeres: %.2f %% \n ",porcetanje*100);
             }
           
           
